@@ -10,6 +10,7 @@ Neste projeto foi utilizo o modelo **Gemini 2.5 Flash** da Google, para analisar
 - dotenv (para a API)
 
 ## 📂 Organização do Projeto
+
 ├── main.py             # Script principal que envia imagens e recebe calorias
 ├── .env                # Arquivo com a chave da API 
 ├── README.md           # Este arquivo
@@ -37,7 +38,9 @@ API_KEY=sua-chave-aqui
 pip install -r requirements.txt
 ```
 
-4. **Adicione suas imagens na pasta**
+4. **Adicione suas imagens na pasta (opicional)**
+
+Já possuem imagens anexadas, porém podem ser adicionadas mais imagens
 
 5. **Rode o script:**
 
@@ -54,3 +57,23 @@ O script carrega várias imagens, envia para o Gemini com um prompt específico 
 * Estimativa de calorias por porção
 
 * Somatório final por imagem
+
+## 👍 Decisões tomadas
+
+* Foi utilizada a biblioteca dotenv como forma de segurança para proteger a API
+
+* Está presente a pasta imagens com todas as fotos presentes
+
+* É escolhido o modelo gemini-2.5-flash-preview-05-20, por ser mais rápido e adequado para entrada de imagens
+
+* Um prompt para enviar ao LLM de forma descritiva para guiar e realizar as tarefas de identificar e estimar as calorias
+
+* Envia o script com o prompt e as imagens de uma só vez para o modelo
+
+* Ao final é gerado uma resposta contendo:
+  
+  - Lista de alimentos identificados por imagem
+    
+  - Estimativa de calorias por alimento
+    
+  - Somatório de calorias por imagem
