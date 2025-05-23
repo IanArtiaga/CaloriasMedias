@@ -7,7 +7,7 @@ Neste projeto foi utilizo o modelo **Gemini 2.5 Flash** da Google, para analisar
 - Python 3
 - Gemini API (via `google-generativeai`)
 - Pillow (`PIL`)
-- dotenv (para a API)
+- dotenv (para esconder a chave da API)
 
 ## 📂 Organização do Projeto
 
