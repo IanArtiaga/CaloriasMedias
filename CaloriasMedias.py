@@ -3,14 +3,22 @@ from PIL import Image
 from dotenv import load_dotenv
 import os
 
+#Carregar as variáveis 
 load_dotenv()
 api_key = os.getenv("API_KEY")
 
 #Configurar a chave api 
 genai.configure(api_key=api_key)
 
-#Lista dos arquivos
-image_files = ["feijoada.jpg", "hamburguer.jpg", "jantinha.jpg", "pf.jpg", "salada.jpg"]
+#Selecionar as pastas com as imagens
+image_folder = "imagens"
+
+#Selecionar todos os arquivos da pasta com .jpg, .jpeg e .png
+image_files = [
+    os.path.join(image_folder, file)
+    for file in os.listdir(image_folder)
+    if file.lower().endswith((".jpg", ".jpeg", ".png"))
+]
 
 #Abre as imagens uma por uma
 image = [Image.open(file) for file in image_files]
