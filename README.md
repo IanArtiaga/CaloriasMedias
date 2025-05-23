@@ -11,11 +11,13 @@ Neste projeto foi utilizo o modelo **Gemini 2.5 Flash** da Google, para analisar
 
 ## 📂 Organização do Projeto
 
+```
 ├── main.py             # Script principal que envia imagens e recebe calorias
 ├── .env                # Arquivo com a chave da API 
 ├── README.md           # Este arquivo
 ├── requirements.txt    # Dependências do projeto
 └── imagens/            # Pasta com as imagens dos alimentos
+```
 
 ## 🚀 Como Rodar
 
