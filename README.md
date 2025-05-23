@@ -1,4 +1,4 @@
-# CaloriaVision 🍽️📷
+# CaloriasMedias 🍽️📷
 
 Neste projeto foi utilizo o modelo **Gemini 2.5 Flash** da Google, para analisar imagens contendo alimentos e estimar a quantidade média de calorias por alimento presente em cada foto.
 
@@ -12,7 +12,7 @@ Neste projeto foi utilizo o modelo **Gemini 2.5 Flash** da Google, para analisar
 ## 📂 Organização do Projeto
 
 ```
-├── main.py             # Script principal que envia imagens e recebe calorias
+├── CaloriasMedias.py   # Script principal que envia imagens e recebe calorias
 ├── .env                # Arquivo com a chave da API 
 ├── README.md           # Este arquivo
 ├── requirements.txt    # Dependências do projeto
@@ -42,7 +42,9 @@ pip install -r requirements.txt
 
 4. **Adicione suas imagens na pasta (opicional)**
 
+```
 Já possuem imagens anexadas, porém podem ser adicionadas mais imagens
+```
 
 5. **Rode o script:**
 
@@ -62,11 +64,11 @@ O script carrega várias imagens, envia para o Gemini com um prompt específico 
 
 ## 👍 Decisões tomadas
 
-* Foi utilizada a biblioteca dotenv como forma de segurança para proteger a API
+* Foi utilizada a biblioteca `dotenv` como forma de segurança para proteger a API
 
-* Está presente a pasta imagens com todas as fotos presentes
+* Está presente a pasta `imagens` com todas as fotos presentes
 
-* É escolhido o modelo gemini-2.5-flash-preview-05-20, por ser mais rápido e adequado para entrada de imagens
+* É escolhido o modelo `gemini-2.5-flash-preview-05-20`, por ser mais rápido e adequado para entrada de imagens
 
 * Um prompt para enviar ao LLM de forma descritiva para guiar e realizar as tarefas de identificar e estimar as calorias
 
