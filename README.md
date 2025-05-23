@@ -45,7 +45,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-##🖼️ Como Funciona
+## 🖼️ Como Funciona
 
 O script carrega várias imagens, envia para o Gemini com um prompt específico e recebe uma resposta com:
 
